@@ -12,6 +12,12 @@ Guide for running app
 
 
 
+## Home Page
+
+![Home Page](https://raw.githubusercontent.com/farooqmir/React-Redux-Demonstration-with-api/master/docs/articles.png)
+
+![Home Page](https://github.com/farooqmir/youtubePlayer/blob/main/docs/home.PNG
+
 [alt text](https://github.com/farooqmir/youtubePlayer/blob/main/docs/home.PNG)
 
 [alt text](https://github.com/farooqmir/youtubePlayer/blob/main/docs/videoPlayer.PNG)
