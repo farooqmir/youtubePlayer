@@ -10,16 +10,22 @@ Guide for running app
 3. **yarn test** - Execute test cases.
 
 
-
-
 ## Home Page
 
-![Home Page](https://raw.githubusercontent.com/farooqmir/React-Redux-Demonstration-with-api/master/docs/articles.png)
+#### Save a video
+1. There is a provision to select a video from favourite list and save the video.
+2. Or we can copy a video id and paste it in the textbox and save the video.
 
-![Home Page](https://github.com/farooqmir/youtubePlayer/blob/main/docs/home.PNG
+![Home Page](https://github.com/farooqmir/youtubePlayer/blob/main/docs/home.PNG)
 
-[alt text](https://github.com/farooqmir/youtubePlayer/blob/main/docs/home.PNG)
 
-[alt text](https://github.com/farooqmir/youtubePlayer/blob/main/docs/videoPlayer.PNG)
+## Video Player Screen
+#### Play a saved video
+1. you can play a saved video, video progress is saved so that it can be watched again where it was left.
 
-[alt text](https://github.com/farooqmir/youtubePlayer/blob/main/docs/gif.PNG)
+![Video Player](https://github.com/farooqmir/youtubePlayer/blob/main/docs/videoPlayer.PNG)
+
+## GIF Screen
+#### Magic screen.
+![GIF](https://github.com/farooqmir/youtubePlayer/blob/main/docs/gif.PNG)
+
