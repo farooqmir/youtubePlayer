@@ -3,19 +3,13 @@ import {useHistory, } from 'react-router-dom';
 import {TextInput,Button,Flex,List} from "../../core";
 import {saveUrl, saveTime} from "../../actions/appActions";
 import {useDispatch,useSelector} from "react-redux"
-
-const featured = [
-  {label:'Maroon 5 - Girls Like You ',id:"aJOTlE1K90k"},
-  {label:'Perfect - Ed Sheeran ',id:"UDDMYw_IZnE"},
-  {label:'Ed Sheeran - Shape of You ',id:"JGwWNGJdvx8"},
-  {label:'Wiz Khalifa - See You Again ',id:"RgKAFK5djSk"}
-]
-
+import {pathMap} from "../App";
+import {featured, label, defaultVideoId} from "./data"
 
 const InitialMode = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  const {url="2Vv-BfVoq4g", time: seekTime=0} = useSelector(state=>state.info);
+  const {url=defaultVideoId, time: seekTime=0} = useSelector(state=>state.info);
   const [videoId, setVideoId] = useState(url);
 
   const onSave =  ()=>{
@@ -24,17 +18,12 @@ const InitialMode = () => {
     else{
        dispatch(saveUrl(videoId));
        dispatch(saveTime((videoId && url!=videoId)?0:seekTime));
-       history.push('/vplayer')
+       history.push(pathMap.videoPlayer.path)
      }
   }
 
   const onSelectVideo = (id)=>{
     setVideoId(id)
-  }
-
-  const label = {
-    url:"Url: ",
-    save:"Save Video"
   }
 
   return (

@@ -26,13 +26,14 @@ const PlayBackMode = (props) => {
       },
     });
     return () => {
-      dispatch(saveTime(ref.current.getCurrentTime()));
+      if(ref && ref.current && ref.current.getCurrentTime)
+       dispatch(saveTime(ref.current.getCurrentTime()));
     }
   }, [time])
   
   const onReady = (event) => {
     ref.current = event.target;
-    if (time)
+    if(time)
       ref.current.seekTo(time)
   }
 

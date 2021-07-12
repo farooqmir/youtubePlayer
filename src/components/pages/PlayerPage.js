@@ -3,7 +3,9 @@ import YoutubePlayer,{Mode} from "../YoutubePlayer";
 
 const PlayerPage = () => {
   return (
-    <YoutubePlayer mode={Mode.Playback} />
+    <React.Fragment>
+       <YoutubePlayer mode={Mode.Playback} />
+    </React.Fragment>
   );
 };
 

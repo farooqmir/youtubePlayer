@@ -10,7 +10,7 @@ import React from "react";
 import { hot } from "react-hot-loader";
 import {Panel,Link} from "../core"
 
-const pathMap = {
+export const pathMap = {
   home: {label:"Home", path:"/"},
   videoPlayer: {label:"Video Player",path:"/vplayer"},
   gif: {label:"GIF",path:"/gif"},
